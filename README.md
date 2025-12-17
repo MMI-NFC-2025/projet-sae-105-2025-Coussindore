@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : PHILBERT
+- PRÉNOM : Théo
+- GROUPE : A1
 - URL du site :
 - URL FIGMA :
