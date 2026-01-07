@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <script type="module" src="/src/js/script.js"></script>
 </head>
 
 <body>
-    
+
+  <header class="header container">
+
+    <div class="header__start">
+    </div>
+  <h1 class="header__title"><a href="index.html">Les éclipsées</a></h1>
+    <div class="header__end">
+      <button class="lang-btn" aria-label="Langue">FR</button>
+      <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"></button>
+
+      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+        <div class="menu__header">
+          <h2 class="menu__title"><a href="index.html">Les éclipsées</a></h2>
+        </div>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Accueil</a></li>
+          <a>></a>
+          <a class="position">Menu</a>
+        </ul>
+        <h2>Menu</h2>
+        <button class="menu-close-btn" aria-label="Fermer le menu">✕</button>
+        <ul class="menu__list list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="articles.html">Articles</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="frise.html">Frise des Mathilda</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="glossaire.html">Glossaire</a>
+          </li>
+        </ul>
+
+        <div class="menu__footer">
+          <div class="footer__link">
+            <a href="légal.html">Mentions légales</a>
+            <a href="Contact.html">Contact</a>
+            <a href="apropos.html">A Propos</a>
+            <a href="autresprojets.html">Autres projets</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <nav class="breadcrumbs page-breadcrumbs" aria-label="Breadcrumb">
+    <a class="breadcrumbs__home" href="index.html">Accueil</a>
+    <span class="breadcrumbs__sep"> &gt; </span>
+    <span class="breadcrumbs__current">Glossaire</span>
+  </nav>
+  <main>
+    <h2 class="title">Rosalind Franklin</h2>
+    <img src="assets/img/rosalindfrank.png" alt="Portrait de Rosalind Franklin" class="main-image"/>
+    <p>Découvrez Rosalind Franklin, pionnière de la structure de l’ADN, dont le rôle essentiel a longtemps été éclipsé. À travers la vulgarisation de sa thèse, ce site rend accessibles ses recherches et les méthodes scientifiques qui ont permis de révéler la double hélice. Le film associé réhabilite sa figure, montrant son combat et son apport fondamental à la science, tout en donnant vie à son histoire. Enfin, le document issu de la bibliothèque universitaire illustre concrètement ses travaux et sert d’outil pédagogique, permettant de replacer Franklin au cœur de l’histoire scientifique. Ensemble, ces ressources combinent récit, analyse et archives pour corriger l’injustice de l’invisibilisation des femmes en science et redonner à Rosalind Franklin la reconnaissance qu’elle mérite. 
+    </p>
+  </main>
+
+  <footer class="footer__container">
+    <div class="footer__link">
+    <a href="légal.html">Mentions légales</a>  
+    <a href="Contact.html">Contact</a>
+    <a href="apropos.html">A Propos</a>
+    <a href="autresprojets.html">Autres projets</a>
+    </div> 
+  </footer>
+
 </body>
+
 </html>

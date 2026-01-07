@@ -1,0 +1,35 @@
+.footer__container {          
+  color: white;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; 
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  text-align: center ;
+  gap: 25px;
+  color: white;
+}
+
+.footer__link a {
+  text-decoration: none;
+  color: #f39c12; /* match .lang-btn orange */
+  font-size: 18px;
+  transition: color 160ms ease, opacity 160ms ease, transform 120ms ease;
+}
+
+.footer__link a:hover,
+.footer__link a:active {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* keyboard focus state for accessibility */
+.footer__link a:focus,
+.footer__link a:focus-visible {
+  outline: 3px solid rgba(243,156,18,0.25);
+  outline-offset: 3px;
+}
